@@ -24,9 +24,10 @@
                 <br><h1>User Name(@User)</h1></span>
             </div>
             <div id="buttons">
-                <button type="submit">New</button>
-                <button>Upload</button>
-                <button>Share</button>
+                <button id="new" type="submit">New</button>
+                <button id="upload">Upload</button>
+                <button id="share">Share</button>
+                
             </div>
         </div>
         <div class="sidebar">
@@ -167,7 +168,7 @@
                             <a href="#">
                                 <img class="icon" src="./icons/share-variant.svg">
                             </a>
-                        </div>>
+                        </div>
                     </div>
                     <div class="project-item">
                         <h3>Easy Peasy App</h3>
@@ -273,5 +274,14 @@
             </div>
         </div>
     </div>
+    <script>
+        const newBtn = document.getElementById('new');
+
+        newBtn.addEventListener("click", ()=> {
+            console.log(
+                "The new button was clicked"
+            )
+        })
+    </script>
 </body>
 </html>

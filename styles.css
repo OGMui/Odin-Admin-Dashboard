@@ -62,8 +62,9 @@ h3, h4 {
 
 #search-bar {
     display: grid;
-    grid-template-columns: 8% 92%;
+    grid-template-columns: 4% 92%;
     align-items: center;
+    
 }
 
 .header input {
@@ -72,7 +73,10 @@ h3, h4 {
     border-radius: 20px;
     border: none;
     height: 1.6em;
-    padding: 3px;
+    padding: 4.2px;
+    font-weight: 400;
+    color: white;
+    
 }
 #welcome-msg {
     display: grid;
@@ -106,6 +110,7 @@ h3, h4 {
     align-items: end;
     align-content: center;
 }
+
 .header > #buttons > button {
     background-color: var(--sidebar-color);
     padding: 6px;
@@ -113,10 +118,15 @@ h3, h4 {
     height: 33px;
     border-radius: 25px;
     font-weight: 500;
-    color: white;
+    color: var(--font-color);
     border: none;
+    cursor: pointer;
 }
+.header > #buttons > button:hover {
+    background-color: var(--accent-color);
+    box-shadow: 1px 1px 5px #2d3c2b;
 
+}
 .sidebar {
     background-color: var(--sidebar-color);
     color: white;
@@ -144,7 +154,7 @@ h3, h4 {
 
 .icon {
     fill: white;
-    height: 25px;
+    height: 23px;
 }
 .nav-item:hover {
     
@@ -162,6 +172,7 @@ h3, h4 {
     font-size: 2.3em;
     font-weight: 700;
     align-items: center;
+    justify-items: center;
 }
 svg {
     height: 50px;
@@ -187,6 +198,7 @@ svg {
     grid-row: 2 / 3;
     display: grid;
     grid-template-columns: 3fr 1fr;
+    grid-template-rows: 3fr 2fr;
     padding: 20px;
     gap: 20px;
 }
@@ -223,6 +235,7 @@ svg {
     grid-row: 1
 }
 #card-bts {
+    padding-top: 15px;
     grid-row: 3;
     grid-column: 2 / 3;
     text-align: left;
