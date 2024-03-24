@@ -18,6 +18,9 @@
     background-color: white;
     border: 2px solid red;
     grid-column: 2 / 3;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 1fr 2fr;
 }
 
 .sidebar {
@@ -25,6 +28,8 @@
  border: 2px solid blue;
  grid-column: 1;
  grid-row: 1 / 3;
+ display: grid;
+ grid-template-rows: 1fr 3fr ;
 }
 
 .main {
@@ -33,4 +38,42 @@
     border: 2px solid green;
     grid-column: 2 / 3;
     grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.projects {
+    grid-row: 1 / 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin: 20px
+
+}
+
+.project-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 6px;
+    border-left: 6px solid orange;
+
+}
+
+.announcement-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 6px;
+
+}
+
+.announcement-content > p{
+    border-bottom: 2px solid #888;
+    padding-bottom: 20px;
+}
+
+.trending-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 6px;
 }
