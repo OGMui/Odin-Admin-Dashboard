@@ -10,16 +10,20 @@
     <div class="container">
         <div class="header">
             <div id="search-bar">
+                <img src="./icons/crosshairs.svg" class="icon">
                 <input type="text" name="search" id="search">
             </div>
             <div id="user-details">
+                <img src="icons/bell-ring.svg" class="icon">
+                <div class="profile-pic"></div>
                 User Name
             </div>
             <div id="welcome-msg">
-                Hi There,
-                <br><h1>User Name(@User)</h1>
+                <div class="main-profile-pic"></div>
+                <span>Hi There,
+                <br><h1>User Name(@User)</h1></span>
             </div>
-            <div id="buttons">\
+            <div id="buttons">
                 <button>New</button>
                 <button>Upload</button>
                 <button>Share</button>
@@ -27,21 +31,90 @@
         </div>
         <div class="sidebar">
             <div class="logo">
-                Dashboard
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <title>dashboard</title>
+                    <path d="M13,3V9H21V3M13,21H21V11H13M3,21H11V15H3M3,13H11V3H3V13Z" />
+                </svg> Dashboard
             </div>
             <div class="nav">
                 <ul>
-                    <li>Home</li>
-                    <li>Profile</li>
-                    <li>Messages</li>
-                    <li>History</li>
-                    <li>Tasks</li>
-                    <li>Communities</li>
+                    <li>
+                        
+                        <div class="nav-item" >
+                            <img class="icon" src="icons/home-outline.svg">
+                            <a href="#">
+                                Home
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="nav-item" >
+                            <img class="icon" src="icons/card-account-details-outline.svg">
+                            <a href="#">
+                            Profile
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="nav-item" >
+                            <img class="icon" src="icons/email-multiple.svg">
+                            <a href="#">
+                            Messages
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="nav-item" >
+                            <img class="icon" src="icons/history.svg">
+                            <a href="#">
+                            History
+                            </a>
+                        </div>
+                        
+                    </li>
+                    <li>
+                        <div class="nav-item" >
+                        <img class="icon" src="icons/note-multiple-outline.svg">
+                        <a href="#">
+                        Tasks
+                        </a>
+                    </div>
+                        </li>
+                    <li>
+                        <div class="nav-item" >
+                            <img class="icon" src="icons/account-group.svg">
+                            <a href="#">
+                            Communities
+                            </a>
+                        </div>
+                    </li>
                 </ul>
                 <ul>
-                    <li>Settings</li>
-                    <li>Support</li>
-                    <li>Privacy</li>
+                    <li>
+                        <div class="nav-item" >
+                            <img class="icon" src="icons/cog.svg">
+                            <a href="#">
+                            Settings
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="nav-item" >
+                            <img class="icon" src="icons/face-agent.svg">
+                            <a href="#">
+                            Support
+                            </a>
+                        </div>
+                        </li>
+                    <li>
+                        <div class="nav-item" >
+                            <img class="icon" src="icons/security.svg">
+                            <a href="#">
+                            Privacy
+                            </a>
+                        </div>
+                        
+                    </li>
                 </ul>
             </div>
         </div>
@@ -54,26 +127,56 @@
                     <div class="project-item">
                         <h3>Super Cool Project</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque elit ullamcorper dignissim cras tincidunt lobortis. Donec et odio pellentesque diam. In egestas erat imperdiet sed euismod nisi. Leo a diam sollicitudin tempor id eu. Pulvinar neque laoreet suspendisse interdum consectetur libero id. Sit amet consectetur adipiscing elit. Mi proin sed libero enim sed faucibus turpis. Venenatis a condimentum vitae sapien. Libero volutpat sed cras ornare arcu dui vivamus. Urna nunc id cursus metus. In mollis nunc sed id semper risus in hendrerit gravida. </p>
+                        <div id="card-bts">
+                            <img class="icon" src="./icons/star-plus.svg">
+                            <img class="icon" src="./icons/eye-plus.svg">
+                            <img class="icon" src="./icons/share-variant.svg">
+                        </div>
                     </div>
                     <div class="project-item">
                         <h3>Less Cool Project</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque elit ullamcorper dignissim cras tincidunt lobortis. Donec et odio pellentesque diam. In egestas erat imperdiet sed euismod nisi. Leo a diam sollicitudin tempor id eu. Pulvinar neque laoreet suspendisse interdum consectetur libero id. Sit amet consectetur adipiscing elit. Mi proin sed libero enim sed faucibus turpis. Venenatis a condimentum vitae sapien. Libero volutpat sed cras ornare arcu dui vivamus. Urna nunc id cursus metus. In mollis nunc sed id semper risus in hendrerit gravida.</p>
+                        <div id="card-bts">
+                            <img class="icon" src="./icons/star-plus.svg">
+                            <img class="icon" src="./icons/eye-plus.svg">
+                            <img class="icon" src="./icons/share-variant.svg">
+                        </div>
                     </div>
                     <div class="project-item">
                         <h3>Impossible App</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque elit ullamcorper dignissim cras tincidunt lobortis. Donec et odio pellentesque diam. In egestas erat imperdiet sed euismod nisi. Leo a diam sollicitudin tempor id eu. Pulvinar neque laoreet suspendisse interdum consectetur libero id. Sit amet consectetur adipiscing elit. Mi proin sed libero enim sed faucibus turpis. Venenatis a condimentum vitae sapien. Libero volutpat sed cras ornare arcu dui vivamus. Urna nunc id cursus metus. In mollis nunc sed id semper risus in hendrerit gravida.</p>
+                        <div id="card-bts">
+                            <img class="icon" src="./icons/star-plus.svg">
+                            <img class="icon" src="./icons/eye-plus.svg">
+                            <img class="icon" src="./icons/share-variant.svg">
+                        </div>
                     </div>
                     <div class="project-item">
                         <h3>Easy Peasy App</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque elit ullamcorper dignissim cras tincidunt lobortis. Donec et odio pellentesque diam. In egestas erat imperdiet sed euismod nisi. Leo a diam sollicitudin tempor id eu. Pulvinar neque laoreet suspendisse interdum consectetur libero id. Sit amet consectetur adipiscing elit. Mi proin sed libero enim sed faucibus turpis. Venenatis a condimentum vitae sapien. Libero volutpat sed cras ornare arcu dui vivamus. Urna nunc id cursus metus. In mollis nunc sed id semper risus in hendrerit gravida.</p>
+                        <div id="card-bts">
+                            <img class="icon" src="./icons/star-plus.svg">
+                            <img class="icon" src="./icons/eye-plus.svg">
+                            <img class="icon" src="./icons/share-variant.svg">
+                        </div>
                     </div>
                     <div class="project-item">
                         <h3>Ad Blocker</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque elit ullamcorper dignissim cras tincidunt lobortis. Donec et odio pellentesque diam. In egestas erat imperdiet sed euismod nisi. Leo a diam sollicitudin tempor id eu. Pulvinar neque laoreet suspendisse interdum consectetur libero id. Sit amet consectetur adipiscing elit. Mi proin sed libero enim sed faucibus turpis. Venenatis a condimentum vitae sapien. Libero volutpat sed cras ornare arcu dui vivamus. Urna nunc id cursus metus. In mollis nunc sed id semper risus in hendrerit gravida.</p>
+                        <div id="card-bts">
+                            <img class="icon" src="./icons/star-plus.svg">
+                            <img class="icon" src="./icons/eye-plus.svg">
+                            <img class="icon" src="./icons/share-variant.svg">
+                        </div>
                     </div>
                     <div class="project-item">
                         <h3>Money Maker</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque elit ullamcorper dignissim cras tincidunt lobortis. Donec et odio pellentesque diam. In egestas erat imperdiet sed euismod nisi. Leo a diam sollicitudin tempor id eu. Pulvinar neque laoreet suspendisse interdum consectetur libero id. Sit amet consectetur adipiscing elit. Mi proin sed libero enim sed faucibus turpis. Venenatis a condimentum vitae sapien. Libero volutpat sed cras ornare arcu dui vivamus. Urna nunc id cursus metus. In mollis nunc sed id semper risus in hendrerit gravida.</p>
+                        <div id="card-bts">
+                            <img class="icon" src="./icons/star-plus.svg">
+                            <img class="icon" src="./icons/eye-plus.svg">
+                            <img class="icon" src="./icons/share-variant.svg">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -108,19 +211,29 @@
                 </h2>
                 <div class="trending-content">
                     <ul>
+                        <div class="profile-pic"></div>
                         <li>
+                            
                             @tegan
                             <br>Word Peace Builder
                         </li>
+                        <div class="profile-pic"></div>
                         <li>
+                            
                             @morgan
                             <br>Super Cool Project
                         </li>
-                        <li>
+                        <div class="profile-pic"></div>
+                            <li>
+                            
                             @kendal
                             <br>Life Changing App
                         </li>
-                        <li>
+                        <div class="profile-pic">
+                                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F2.bp.blogspot.com%2F-e1__gaQz8fw%2FUobv-jn36aI%2FAAAAAAAAFLk%2FsrSymnOIVog%2Fs1600%2FCapybara-Animals-Pictures.jpg&f=1&nofb=1&ipt=38e51a46baf27e3a4c49ab048e9ce7fdc88d385c7a93082ec1a72b3d76ae265c&ipo=images">
+                            </div>
+                            <li>
+                            
                             @alex
                             <br> No Traffic Maker
                         </li>

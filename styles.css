@@ -1,6 +1,6 @@
 :root {
     --sidebar-color: #44cf6c;
-    --accent-color: #44cf6c;
+    --accent-color: #a9fdac;
     --font-color: #2d2c2b;
     --project-edge-color: ;
     --project-bg-color: #f1ffe7;
@@ -26,14 +26,44 @@ h2 {
 h3, h4 {
     margin-top: 10px;
 }
+.main-profile-pic {
+    background-color: var(--accent-color);
+    width: 60px;
+    height: 60px;
+    box-sizing: border-box;
+    border-radius: 100% 100%;
+    grid-column: 1;
+    grid-row: 1 / 2;
+}
 
+.profile-pic {
+    background-color: var(--accent-color);
+    width: 40px;
+    height: 40px;
+    box-sizing: border-box;
+    border-radius: 100% 100%;
+    
+}
+.profile-pic img {
+    height:100%; 
+    width:100%;
+    object-fit: cover;
+    border-radius: 50%;
+    grid-column: 1;
+}
 .header {
     background-color: white;
     grid-column: 2 / 3;
     display: grid;
     grid-template-columns: 3fr 2fr;
-    grid-template-rows: 1fr 2fr;
     padding: 20px;
+    gap: 20px
+}
+
+#search-bar {
+    display: grid;
+    grid-template-columns: 8% 92%;
+    align-items: center;
 }
 
 .header input {
@@ -44,14 +74,42 @@ h3, h4 {
     height: 1.6em;
     padding: 3px;
 }
+#welcome-msg {
+    display: grid;
+    grid-template-columns: 60px 1fr ;
+    gap: 10px
+}
+
+#welcome-msg h1 {
+    grid-column: 2 /3;
+    grid-row: 2 / 3;
+    
+}
+#welcome-msg span{
+    grid-column: 2 /3;
+    grid-row: 1 / 3;
+}
+#user-details {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 60px 60px auto;
+    font-weight: 700;
+    align-items: center;
+    justify-items: end;
+    justify-content: center;
+
+}
 #buttons {
-    display: flex;
-    align-content:space-around
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: end;
+    align-content: center;
 }
 .header > #buttons > button {
     background-color: var(--sidebar-color);
     padding: 6px;
-    width: 60px;
+    width: 80px;
     height: 33px;
     border-radius: 25px;
     font-weight: 500;
@@ -60,16 +118,47 @@ h3, h4 {
 }
 
 .sidebar {
- background-color: var(--sidebar-color);
- color: white;
- grid-column: 1;
- grid-row: 1 / 3;
- padding: 20px;
+    background-color: var(--sidebar-color);
+    color: white;
+    grid-column: 1;
+    grid-row: 1 / 3;
+    padding: 20px;
+}
+.nav-item{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    align-items: center;
+    
+}
+.nav-item a {
+    text-decoration: none;
+}
+
+.nav-item img {
+    grid-column: 1;
+}
+
+.icon {
+    fill: white;
+    height: 25px;
+}
+.nav-item:hover {
+    
+    filter: invert(100%);
 }
 
 .logo {
-    font-size: 2em;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    font-size: 2.3em;
+    font-weight: 700;
+    align-items: center;
 }
+svg {
+    height: 50px;
+    width: 50px;
+}
+
 
 .nav ul {
     list-style: none;
@@ -79,6 +168,7 @@ h3, h4 {
 
 .nav li{
     padding: 5px;
+    font-weight: 500;
 }
 
 .main {
@@ -88,7 +178,6 @@ h3, h4 {
     grid-row: 2 / 3;
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: 1fr 1fr;
     padding: 20px;
     gap: 20px;
 }
@@ -111,10 +200,28 @@ h3, h4 {
     border-radius: 6px;
     border-left: 6px solid var(--accent-color);
     box-shadow: 1px 1px 5px #2d3c2b;
-
-
+    display: grid;
+    grid-template-columns: 3fr 2fr ;
+    grid-template-rows: auto auto auto;
+}
+.project-item p {
+    grid-column: 1/3;
+    grid-row: 2
 }
 
+.project-item h3 {
+    grid-column: 1/3;
+    grid-row: 1
+}
+#card-bts {
+    grid-row: 3;
+    grid-column: 2 / 3;
+    text-align: left;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+
+}
 .announcement-content {
     background-color: white;
     padding: 20px;
@@ -137,4 +244,17 @@ h3, h4 {
     padding: 20px;
     border-radius: 6px;
     box-shadow: 1px 1px 5px #2d3c2b;
+    /* display: grid;
+    grid-template-columns: 1fr 4fr; */
+}
+.trending-content ul {
+    display: grid;
+    gap: 10px
+}
+.trending-content > ul > li {
+    list-style: none;
+    grid-column: 2 / 3;
+}
+.trending-content .profile-pic {
+    grid-column: 1;
 }
