@@ -62,7 +62,7 @@ h3, h4 {
 
 #search-bar {
     display: grid;
-    grid-template-columns: 4% 92%;
+    grid-template-columns: 40px 92%;
     align-items: center;
     
 }
@@ -155,6 +155,10 @@ h3, h4 {
 .icon {
     fill: white;
     height: 23px;
+}
+
+.icon#search, .icon#bell {
+    cursor: pointer;
 }
 .nav-item:hover {
     
@@ -279,4 +283,7 @@ svg {
 }
 .trending-content .profile-pic {
     grid-column: 1;
+}
+.trending-user {
+    font-weight: 700;
 }
